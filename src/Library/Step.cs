@@ -23,5 +23,10 @@ namespace Full_GRASP_And_SOLID.Library
         public int Time { get; set; }
 
         public Equipment Equipment { get; set; }
+        public string Text()
+        {
+            return ($"{this.Quantity} de '{this.Input.Description}' " +
+            $"usando '{this.Equipment.Description}' durante {this.Time}");
+        }
     }
 }
